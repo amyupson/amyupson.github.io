@@ -1,1 +1,125 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Upson | PhD Machine Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .accent-border { border-left: 4px solid #3b82f6; }
+        .skill-tag { background: #e2e8f0; padding: 4px 12px; border-radius: 15px; font-size: 0.85rem; display: inline-block; margin: 2px; }
+    </style>
+</head>
+<body class="p-4 md:p-12">
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden">
+        
+        <!-- HEADER -->
+        <header class="bg-slate-800 text-white p-8 md:flex items-center gap-8">
+            <img src="profile.jpg" alt="Amy Upson" class="w-32 h-32 rounded-full border-4 border-blue-500 mx-auto md:mx-0 object-cover bg-gray-300">
+            <div class="text-center md:text-left mt-4 md:mt-0">
+                <h1 class="text-4xl font-bold">Amy Upson</h1>
+                <p class="text-blue-400 text-xl font-medium mt-1">PhD Candidate in Machine Learning for Cardiology</p>
+                <div class="mt-4 flex flex-wrap justify-center md:justify-start gap-4 text-sm text-slate-300">
+                    <span><i class="fas fa-envelope mr-2"></i>amy.upson@me.com</span>
+                    <span><i class="fas fa-location-dot mr-2"></i>Brighton, UK</span>
+                    <span><i class="fab fa-github mr-2"></i>github.com/amyupson</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            
+            <!-- LEFT COLUMN (Sidebar) -->
+            <aside class="bg-slate-50 p-8 border-r border-slate-100">
+                <section class="mb-8">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">Expertise</h2>
+                    <p class="font-bold text-xs mt-2 uppercase">Languages</p>
+                    <div class="flex flex-wrap mt-1">
+                        <span class="skill-tag">Python</span> <span class="skill-tag">SQL</span> <span class="skill-tag">MATLAB</span> <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                    <p class="font-bold text-xs mt-4 uppercase">Libraries</p>
+                    <div class="flex flex-wrap mt-1">
+                        <span class="skill-tag">PyTorch</span> <span class="skill-tag">Scikit-learn</span> <span class="skill-tag">Pandas</span> <span class="skill-tag">NumPy</span>
+                    </div>
+                    <p class="font-bold text-xs mt-4 uppercase">Concepts</p>
+                    <div class="flex flex-wrap mt-1">
+                        <span class="skill-tag">Predictive Modelling</span> <span class="skill-tag">NLP</span> <span class="skill-tag">LLMs</span> <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </section>
+
+                <section class="mb-8">
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">Education</h2>
+                    <div class="mb-4">
+                        <p class="font-bold text-sm">University of Sussex</p>
+                        <p class="text-xs italic text-slate-600">BSc Computer Science & AI (First Class)</p>
+                        <p class="text-xs text-slate-500">2025</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">Hackathons</h2>
+                    <ul class="text-xs space-y-3 text-slate-600">
+                        <li><strong>Hack Sussex 26:</strong> Volunteer (Liaison)</li>
+                        <li><strong>Game Jam 25:</strong> Help Desk</li>
+                        <li><strong>Hack Sussex 25:</strong> Competitor (Garden of Emotions)</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- RIGHT COLUMN (Main Content) -->
+            <main class="col-span-2 p-8">
+                <section class="mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-blue-100 pb-2">Profile</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Current PhD student in Medical ML, passionate about building technology and supporting developer communities. 
+                        Experienced in machine learning research, development, and collaborative hackathon environments.
+                    </p>
+                </section>
+
+                <section class="mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4 border-b-2 border-blue-100 pb-2">Experience</h2>
+                    
+                    <div class="mb-8 accent-border pl-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">PhD Student in Medical AI</h3>
+                            <span class="text-sm text-slate-500">2026 - Present</span>
+                        </div>
+                        <p class="text-blue-600 text-sm italic">University of Sussex</p>
+                        <ul class="mt-2 text-slate-600 text-sm list-disc ml-4 space-y-1">
+                            <li>Developing predictive models using clinical and CT-derived imaging biomarkers.</li>
+                            <li>Utilising survival analysis and multi-modal data integration for post-procedural mortality.</li>
+                            <li>Collaborating with researchers from UCL and Sussex County Hospital.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8 accent-border pl-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">Event Host / Representative</h3>
+                            <span class="text-sm text-slate-500">2025 - Present</span>
+                        </div>
+                        <p class="text-blue-600 text-sm italic">Chicken Rush</p>
+                        <ul class="mt-2 text-slate-600 text-sm list-disc ml-4 space-y-1">
+                            <li>Facilitate interactive adventure events for corporate groups across London.</li>
+                            <li>Guide teams through challenges and monitor progress via a custom platform.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8 accent-border pl-4">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-lg">After School Club Leader</h3>
+                            <span class="text-sm text-slate-500">2023 - 2025</span>
+                        </div>
+                        <p class="text-blue-600 text-sm italic">Brighton Young Engineers</p>
+                        <p class="mt-2 text-slate-600 text-sm italic underline">Delivered interactive STEM lessons to children through hands-on model-building.</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-8 text-slate-400 text-sm">
+        &copy; 2026 Amy Upson — Built with GitHub Pages
+    </footer>
+</body>
+</html>
